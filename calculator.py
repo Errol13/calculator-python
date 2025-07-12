@@ -5,27 +5,27 @@ def addition(first_num, second_num):
     if not isinstance(first_num,(int, float))or not isinstance(second_num,(int,float)):
         raise TypeError("Inputs must be number!")
     else:
-        return first_num + second_num
+        return round(first_num + second_num, 2)
 #subtraction function
 def subtract(first_num, second_num):
-    return first_num - second_num
+    return round(first_num - second_num, 2)
 
 #multiply function
 def multiply(first_num, second_num):
-    return first_num * second_num
+    return round(first_num * second_num,2)
 
 #divide function
 def divide(first_num, second_num):
     if(second_num == 0):
         raise ZeroDivisionError("Error! cannot divide by zero")
     else:
-        return first_num / second_num
+        return  round(first_num / second_num, 2)
 
 #function for getting valid number
 def get_number(prompt):
     while True:
         try:
-            return int(input(prompt))
+            return float(input(prompt))
         except ValueError:
             print("Invalid input! Try again!")
 
@@ -42,7 +42,7 @@ def get_operator(prompt):
 if __name__ == "__main__":
 
     first_number = get_number("Enter a number: ")
-    operator_choice = get_operator("Enter the operation (+, -, /, *):")
+    operator_choice = get_operator("Enter the operation (+, -, /, *): ")
     second_number = get_number("Enter another number: ")
 
 #declare a dictionary for operation
