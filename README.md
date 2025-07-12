@@ -1,12 +1,14 @@
 # Python Calculator 🧮
 
-A simple calculator program written in Python that performs basic operations: addition, subtraction, multiplication, and division.
+A simple calculator program written in Python that performs basic operations: addition, subtraction, multiplication, and division. 
+
+This project demonstrates my ability to write clean Python code and use Pytest for automated unit testing.
 
 ## Features
 - CLI input for numbers and operations
 - Handles division by zero gracefully
 - Unit tested using `pytest`
-- Added unit testing for addition function
+- Added unit testing for all functions
 
 
 ## Run the Calculator and Pytest
