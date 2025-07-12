@@ -9,17 +9,25 @@ A simple calculator program written in Python that performs basic operations: ad
 - Added unit testing for addition function
 
 
-### Run the Calculator and Pytest
+## Run the Calculator and Pytest
+
+### Create and activate a virtual environment
 ```bash
-# Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate
+```
 
-# Install project dependencies
+### Install project dependencies
+```bash
 pip install -r requirements.txt
+```
 
-#Run the python calculator
+### Run the python calculator
+```bash
 python3 calculator.py
+```
 
-#Run the test
+### Run the test
+```bash
 pytest test_calculator.py
+```
