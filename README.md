@@ -9,6 +9,7 @@ This project demonstrates my ability to write clean Python code and use Pytest f
 - Handles division by zero gracefully
 - Unit tested using `pytest`
 - Added unit testing for all functions
+- Added `pytest parametrize` and `pytest fixture` usages
 
 
 ## Run the Calculator and Pytest
@@ -26,10 +27,11 @@ pip install -r requirements.txt
 
 ### Run the python calculator
 ```bash
+cd classes/
 python3 calculator.py
 ```
 
 ### Run the test
 ```bash
-pytest test_calculator.py
+python3 -m pytest
 ```
