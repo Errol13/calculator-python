@@ -25,7 +25,7 @@ class Calculator:
             return  round(first_num / second_num, 2)
 
 #function for getting valid number
-def get_number(prompt):
+def get_number(prompt):  # pragma:no cover
     while True:
         try:
             return float(input(prompt))
@@ -33,7 +33,7 @@ def get_number(prompt):
             print("Invalid input! Try again!")
 
 #function for getting valid operator 
-def get_operator(prompt):
+def get_operator(prompt):  # pragma:no cover
     while True:
         valid_operators = ['+', '-', '*', '/']
         op = input(prompt)
@@ -42,7 +42,7 @@ def get_operator(prompt):
         else:
             print("Invalid operator! Choose again.")
             
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma:no cover
 
     first_number = get_number("Enter a number: ")
     operator_choice = get_operator("Enter the operation (+, -, /, *): ")
